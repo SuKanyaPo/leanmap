@@ -1,0 +1,240 @@
+.App {
+  width: 100vw; /* ขนาดความกว้างเท่ากับขนาดของ viewport ทั้งหมด */
+  height: 100vh; /* ขนาดความสูงเท่ากับขนาดของ viewport ทั้งหมด */
+  display: 20vh;
+  flex-direction: column;
+  justify-content: space-between; /* จัดให้องค์ประกอบอยู่ทางด้านซ้ายและด้านขวาของ .App */
+  background-color: rgb(10, 19, 21);
+  
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* .App-header {
+  background-color: #282c34;
+  height: 10vh; /* เปลี่ยนเป็นความสูง 10vh */
+  /* display: flex;
+  flex-direction: row; /* เปลี่ยนเป็นแนวนอน */
+  /* justify-content: space-between; จัดเรียงองค์ประกอบในระหว่าง */
+  /* align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+  /* padding: 0 20px; เพิ่ม padding ด้านซ้ายและขวา */
+  /* color: rgb(235, 0, 0); เปลี่ยนสีข้อความ */ 
+/* } */ 
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.contonmap {
+  position: absolute;
+  top: 20px; /* ปรับตำแหน่งตามต้องการ */
+  left: 40%; /* ปรับตำแหน่งตามต้องการ */
+  z-index: 1000; /* ปรับตำแหน่งตามต้องการ */
+  background-color: white; /* ปรับสีพื้นหลังตามต้องการ */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.contonmap p {
+  margin: 0;
+}
+
+.contonmap input[type="file"] {
+  margin-right: 10px;
+}
+
+.contonmap button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.contonmap button:hover {
+  background-color: #eff5fa;
+}
+
+/*menu*/
+/* App.css */
+.map-menu {
+  position: absolute;
+  top: 20px;
+  right:5vh;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.menu-item {
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  color: blue;
+}
+.menu {
+  position: relative;
+  width: 100vh;
+  height: 100vh;
+  display:flex;
+  justify-content: space-between;
+  width: 100vh;
+  height: auto;
+  background-size:cover;
+  background-position: center;
+  filter: brightness(90%);
+  align-items: 100%;
+}
+.map-menu {
+  position: absolute;
+  top: 40px; /* ปรับตำแหน่งตามความต้องการ */
+  right: 10px; /* ปรับตำแหน่งตามความต้องการ */
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.8); /* สีพื้นหลังของเมนู */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.menu-item {
+  margin-bottom: 2vh;
+}
+
+.menu-item a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.menu-item a:hover {
+  /* color: blue; */
+  text-decoration: underline;
+}
+.App .App-header {
+  display: flex;
+  justify-content: flex-end; /* ทำให้เนื้อหาอยู่ด้านขวา */
+  background-color: rgb(220, 248, 255);
+
+}
+
+.App .App-header ul.menu {
+  margin: 10;
+  padding: 3vh;
+  list-style: none;
+}
+.App .App-header ul.menu li a{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  align-items: 80px;
+
+}
+
+.map-container {
+  margin-top: 20px;
+}
+
+.App-header {
+  background-color: #ffffff; /*แก้ขาว*/
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(235, 0, 0);
+}
+
+* ปรับ CSS ของเมนู */
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 20px;
+  color: #030303;
+}
+
+.menu li:last-child {
+  margin-right: 0; /* ไม่มีการ margin ที่สุดท้าย */
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  color: #61dafb; /* เปลี่ยนสีเมื่อ hover */
+}
+
+/* ปุ๋มกด submit file  */
+/* App.css */
+/* App.css */
+
+.submit {
+  position: absolute;
+  top: 10px;
+  left: 20vh;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.submit input[type="file"] {
+  margin-bottom: 10px;
+}
+
+.submit button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit button:hover {
+  background-color: #45a049;
+}
+/* Map.css */
+.map-container {
+  position: relative;
+}
+
+.map-overlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+}
